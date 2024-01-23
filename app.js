@@ -1,17 +1,16 @@
-// const 값 변경 불가능
-// const a = 5; // Number
-// const b = 2; // Number
-// const myName = "yj"; // String
+// boolean ture/false
+// const amIHere = true;
+// console.log(amIHere);
 
-// let 값 변경 가능
-const a = 5; // Number
-const b = 2; // Number
-let myName = "yj"; // String
+// null = 없다. => 컴퓨터에 메모리 공간이 없다.
+// const amIHere = null;
+// console.log(amIHere);
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
+// undefined = 정의되지 않았다. => 컴퓨터에 메모리 공간은 있지만 값이 없다.
+const amIHere = null;
+let something;
+console.log(something); // undefined
 
-myName = "yujin";
-console.log("your new name is " + myName);
+// ture/false -> type
+// null -> type
+// undefined -> type
