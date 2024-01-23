@@ -1,16 +1,20 @@
-// boolean ture/false
-// const amIHere = true;
-// console.log(amIHere);
+// 데이터 구조
+// array 배열 []
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
 
-// null = 없다. => 컴퓨터에 메모리 공간이 없다.
-// const amIHere = null;
-// console.log(amIHere);
+// const daysOfWeek = mon + tue + wed + thu + fri + sat + sun;
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+console.log(daysOfWeek); // ["mon", "tue", "wed", "thu", "fri", "sat"]
 
-// undefined = 정의되지 않았다. => 컴퓨터에 메모리 공간은 있지만 값이 없다.
-const amIHere = null;
-let something;
-console.log(something); // undefined
+// Get Item from Array
+console.log(daysOfWeek[4]); // fri
 
-// ture/false -> type
-// null -> type
-// undefined -> type
+// Add one more day to the array
+daysOfWeek.push("sun");
+console.log(daysOfWeek); // ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
