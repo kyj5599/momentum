@@ -1,12 +1,13 @@
-// function 2
-// calculate
-// firstNumber, secondNumber은 plus함수 안에서만 존재한다.
-function plus(firstNumber, secondNumber) {
-  console.log(firstNumber + secondNumber);
-}
-function divide(a, b) {
-  console.log(a / b);
-}
+// function 3
+// object(player) + function(sayHello)
+const player = {
+  name: "yj",
+  sayHello: function (otherPersonName) {
+    console.log("hello! " + otherPersonName + " nice to meet you!");
+  },
+};
 
-plus(60, 8);
-divide(98, 20);
+//
+console.log(player.name); // yj
+player.sayHello("lynn"); // hello! lynn nice to meet you!
+player.sayHello("nico"); // hello! nico nice to meet you!
