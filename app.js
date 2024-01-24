@@ -1,25 +1,11 @@
-// calculator
-// return
-const calculator = {
-  add: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-  divide: function (a, b) {
-    return a / b;
-  },
-  multiply: function (a, b) {
-    return a * b;
-  },
-  power: function (a, b) {
-    return a ** b;
-  },
-};
+// 조건문 (conditional)
+// const age = prompt("How old are you?");
+// typeof : 변수의 타입을 알려줌
+// parseInt() : 문자열을 숫자로 변환
+// console.log(typeof "15", typeof parseInt("15")); // string number
+// console.log(age, parseInt(age)); // 15(string) 15(number) // 문자를 입력하면 NaN 출력
+// NaN : Not a Number
 
-const plusResult = calculator.add(2, 3); // 5
-const minusResult = calculator.minus(plusResult, 10); // -5
-const multiplyResult = calculator.multiply(10, minusResult); // -50
-const divideResult = calculator.divide(multiplyResult, plusResult); // -10
-const powerResult = calculator.power(divideResult, minusResult); // 1e+10
+const age = parseInt(prompt("How old are you?"));
+
+console.log(age);
