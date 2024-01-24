@@ -1,13 +1,24 @@
-// function 3
-// object(player) + function(sayHello)
-const player = {
-  name: "yj",
-  sayHello: function (otherPersonName) {
-    console.log("hello! " + otherPersonName + " nice to meet you!");
+// calculator
+const calculator = {
+  add: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  divide: function (a, b) {
+    console.log(a / b);
+  },
+  multiply: function (a, b) {
+    console.log(a * b);
+  },
+  power: function (a, b) {
+    console.log(a ** b);
   },
 };
 
-//
-console.log(player.name); // yj
-player.sayHello("lynn"); // hello! lynn nice to meet you!
-player.sayHello("nico"); // hello! nico nice to meet you!
+calculator.add(1, 2);
+calculator.minus(1, 2);
+calculator.divide(1, 2);
+calculator.multiply(1, 2);
+calculator.power(1, 2);
