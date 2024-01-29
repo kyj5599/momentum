@@ -1,30 +1,18 @@
-const h1 = document.querySelector("h1");
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-function handleTitleClick() {
-  const clickedClass = "clicked";
-  if (h1.classList.contains(clickedClass)) {
-    h1.classList.remove(clickedClass);
-  } else {
-    h1.classList.add(clickedClass);
-  }
+const link = document.querySelector("a");
+
+// preventDefault() : 기본 동작을 막는다.
+function onLoginSubmit(event) {
+  event.preventDefault();
+  console.log(loginInput.value);
 }
 
-h1.addEventListener("click", handleTitleClick);
-
-// =======================================================
-
-const body = document.body;
-
-function handleWindowResize() {
-  const windowWidth = window.innerWidth;
-
-  if (windowWidth >= 1200) {
-    body.style.backgroundColor = "yellow";
-  } else if (windowWidth >= 600) {
-    body.style.backgroundColor = "purple";
-  } else {
-    body.style.backgroundColor = "blue";
-  }
+function handleLinkClick(event) {
+  event.preventDefault();
+  console.dir(event);
 }
 
-window.addEventListener("resize", handleWindowResize);
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLinkClick);
