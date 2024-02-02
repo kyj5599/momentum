@@ -1,6 +1,15 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
+// toDos : 할 일을 저장하는 배열 array
+const toDos = [];
+// 브라우저 저장 : localStorage => array, object를 저장할 수 없음 / text만 저장 가능
+// saveToDos() : toDos를 localStorage에 저장하는 함수
+function saveToDos() {
+  // ** 중요 ** JSON.stringify() : JavaScript 값이나 객체를 JSON 문자열로 변환
+  // ex) ["a","b","c"]
+  localStorage.setItem("todos", JSON.stringify(toDos));
+}
 
 // deleteToDo() : 할 일을 삭제하는 함수
 function deleteToDo(event) {
@@ -26,9 +35,12 @@ function paintToDo(newTodo) {
 // hadleToDoSubmit() : 할 일을 추가하는 함수
 function handleToDoSubmit(event) {
   event.preventDefault();
+  // newTodo : toDoInput에 입력된 값
   const newTodo = toDoInput.value;
   toDoInput.value = "";
+  toDos.push(newTodo);
   paintToDo(newTodo);
+  saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
