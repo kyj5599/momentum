@@ -62,7 +62,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 // localStorage에 저장된 값이 있으면 가져와서 화면에 출력
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
-if (saveToDos !== null) {
+if (savedToDos !== null) {
   // parsedToDos : JavaScript에서 사용가능한 object로 변환 => array로 변환
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;

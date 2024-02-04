@@ -1,3 +1,153 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-color: #fff; /* 원하는 배경색으로 변경 가능 */
+}
+
+/* backgound */
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1; /* 이미지가 다른 요소들 아래에 위치하도록 설정 */
+}
+
+.clock{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Orbitron', sans-serif;
+}
+/* clock아래에 날짜를 표시해줘 */
+.date{
+  position: absolute;
+  top: 25.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+.weather{
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.todo{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: -50px;
+  text-align: center;
+  .todo-input{
+    position: absolute;
+    width: 230px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .todo-list{
+    position: absolute;
+    width: 200px;
+    top: 95px;
+    left: 40%;
+    align-items:center;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Orbitron', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      margin-top: 10px;
+    }
+    button{
+      position: absolute;
+      background: none;
+      border: none;
+      right: 10px;
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 0 0 10px #000;
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+}
+
+/* login */
+.greeting{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Orbitron', sans-serif;
+  /* 로그인 input창 */
+  .login-input{
+    position: absolute;
+    top: 10px;
+    /* right: 30px; */
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Orbitron', sans-serif;
+  }
+  /* 로그인 버튼 */
+  .login-button{
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    /* right: 30px; */
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+.quote{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0.5;
+  span{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
