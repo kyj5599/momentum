@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #fff; /* 원하는 배경색으로 변경 가능 */
+  background-color: #fff; /* 배경색 */
 }
 
 /* backgound */
@@ -27,7 +27,6 @@ img {
   text-shadow: 0 0 10px #000;
   font-family: 'Orbitron', sans-serif;
 }
-/* clock아래에 날짜를 표시해줘 */
 .date{
   position: absolute;
   top: 25.5%;
